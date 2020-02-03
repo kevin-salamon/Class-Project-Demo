@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>NYT Archival</title>
+</head>
+<body>
+    <div class="jumbotron text-center jumbo-style bg-primary">
+        <h1>New York Times Search</h1>
+    </div>
+    <br>
+    <div class="container">
+        <div clas="row">
+            <div class="col-md-12">
+                <div class="top-container">
+                    <div class="sub-header">Search Parameters</div>
+                    <div class="entry">
+                        <h6>Search Term: </h6>
+                        <form >
+                            <input placeholder="search term" id="search-term" style="width: 100%;">
+                        </form >
+                    </div>
+                    <div class="entry">
+                        <h6>Number of Records to Retrieve: </h6>
+                        <form>
+                            <input placeholder="#" id="record-count" style="width: 100%;">
+                        </form>
+                    </div>
+                    <div class="entry">
+                       <h6>Start Year (optional): </h6>
+                        <form>
+                            <input placeholder="year" id="start-year" style="width: 100%;">
+                        </form>
+                    </div>
+                    <div class="entry">
+                        <h6>End Year (optional): </h6>
+                        <form>
+                            <input placeholder="year" id="end-year" style="width: 100%;">
+                        </form>
+                    </div>
+                    <div class="button">
+                        <button class="btn btn-primary rounded" id="search-button">Search</button>
+                        <button class="btn btn-primary rounded" id="clear-results">Clear Results</button>
+                    </div>
+                </div>
+                <br>
+                <div class="bottom-container">
+                    <div class="sub-header">Top Articles</div>
+                    <div id="top-articles"></div>
+                </div>
+                <br>
+                <h5>Made by #Team4</h5>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
